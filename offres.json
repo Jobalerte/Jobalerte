@@ -1,0 +1,64 @@
+{
+  "offres": [
+    {
+      "id": 1,
+      "titre": "Développeur Web Front-End",
+      "entreprise": "TechCorp Dakar",
+      "lieu": "Dakar",
+      "type": "emploi",
+      "dateLimite": "2026-08-15",
+      "description": "Nous recherchons un développeur front-end maîtrisant HTML, CSS et JavaScript pour rejoindre notre équipe produit. Vous participerez à la conception d'interfaces modernes et responsives.",
+      "contact": "recrutement@techcorp.sn"
+    },
+    {
+      "id": 2,
+      "titre": "Stage Marketing Digital",
+      "entreprise": "AgenceNova",
+      "lieu": "Thiès",
+      "type": "stage",
+      "dateLimite": "2026-08-01",
+      "description": "Stage de 3 mois au sein de notre pôle communication digitale. Gestion des réseaux sociaux, création de contenu et analyse de performance.",
+      "contact": "stages@agencenova.sn"
+    },
+    {
+      "id": 3,
+      "titre": "Formation Comptabilité & Gestion",
+      "entreprise": "Institut ProSkills",
+      "lieu": "Dakar",
+      "type": "formation",
+      "dateLimite": "2026-09-10",
+      "description": "Formation certifiante de 6 semaines en comptabilité générale et gestion d'entreprise, ouverte aux débutants comme aux professionnels en reconversion.",
+      "contact": "contact@proskills.sn"
+    },
+    {
+      "id": 4,
+      "titre": "Chargé(e) de Clientèle",
+      "entreprise": "BanqueAtlantique",
+      "lieu": "Saint-Louis",
+      "type": "emploi",
+      "dateLimite": "2026-07-31",
+      "description": "Poste en agence pour l'accueil, le conseil et le suivi de la clientèle particuliers. Une première expérience bancaire est un plus.",
+      "contact": "rh@banqueatlantique.sn"
+    },
+    {
+      "id": 5,
+      "titre": "Stage Développement Mobile",
+      "entreprise": "AppFactory",
+      "lieu": "Dakar",
+      "type": "stage",
+      "dateLimite": "2026-08-20",
+      "description": "Stage de fin d'études en développement d'applications mobiles Android/iOS au sein d'une équipe agile et dynamique.",
+      "contact": "jobs@appfactory.sn"
+    },
+    {
+      "id": 6,
+      "titre": "Formation Anglais des Affaires",
+      "entreprise": "Institut ProSkills",
+      "lieu": "En ligne",
+      "type": "formation",
+      "dateLimite": "2026-09-30",
+      "description": "Programme intensif de 4 semaines pour maîtriser l'anglais professionnel : rédaction, négociation et communication orale.",
+      "contact": "contact@proskills.sn"
+    }
+  ]
+}

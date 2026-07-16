@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JobAlerte — Votre réussite, notre mission</title>
+<meta name="description" content="JobAlerte connecte candidats et recruteurs : offres d'emploi, stages, formations et service de CV professionnel. Trouvez votre prochaine opportunité aujourd'hui.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="JobAlerte — Votre réussite, notre mission">
+<meta property="og:description" content="Offres d'emploi, stages et formations, mises à jour chaque jour. Créez votre CV professionnel et postulez en un clic.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<!-- ⚠️ À MODIFIER : ajoutez ici vos favicons dans /assets/icons -->
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "JobAlerte",
+  "description": "Plateforme d'offres d'emploi, de stages, de formations et de service de CV professionnel.",
+  "slogan": "Votre réussite, notre mission"
+}
+</script>
+</head>
+<body>
+
+<!-- ===== Bandeau d'alerte (signature) ===== -->
+<div class="alert-ticker" role="marquee" aria-label="Dernières alertes offres">
+  <span class="alert-ticker__label"><span class="alert-ticker__dot" aria-hidden="true"></span>Alertes</span>
+  <div class="alert-ticker__track" id="alert-ticker-track">
+    <span>Chargement des dernières offres…</span>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <nav class="navbar" aria-label="Navigation principale">
+    <a href="index.html" class="logo">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span class="logo__badge"></span>
+      </span>
+      JobAlerte
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="offres.html">Offres</a></li>
+      <li><a href="cv-pro.html">CV Pro</a></li>
+      <li><a href="employeur.html">Espace Employeur</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="offres.html" class="btn btn-outline">Voir les offres</a>
+      <a href="employeur.html" class="btn btn-primary">Publier une offre</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <span class="eyebrow">🔔 Nouvelles offres chaque jour</span>
+        <h1>
+          <span class="slogan-line">Votre réussite,</span>
+          <span class="slogan-line highlight">notre mission.</span>
+        </h1>
+        <p class="lead">JobAlerte réunit emplois, stages et formations en un seul endroit — et vous prévient dès qu'une opportunité vous correspond.</p>
+        <div class="hero-actions">
+          <a href="offres.html" class="btn btn-primary">Découvrir les offres</a>
+          <a href="cv-pro.html" class="btn btn-accent">Créer mon CV professionnel</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>1 200+</strong><span>Offres publiées</span></div>
+          <div><strong>340</strong><span>Entreprises partenaires</span></div>
+          <div><strong>92%</strong><span>Candidats satisfaits</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="alert-card alert-card--1">
+          <div class="alert-card__top">
+            <span class="alert-card__badge badge-emploi">Emploi</span>
+            <span class="alert-card__time">Il y a 2h</span>
+          </div>
+          <h4>Développeur Web Front-End</h4>
+          <p>TechCorp Dakar · Dakar</p>
+        </div>
+        <div class="alert-card alert-card--2">
+          <div class="alert-card__top">
+            <span class="alert-card__badge badge-stage">Stage</span>
+            <span class="alert-card__time">Il y a 5h</span>
+          </div>
+          <h4>Marketing Digital</h4>
+          <p>AgenceNova · Thiès</p>
+        </div>
+        <div class="alert-card alert-card--3">
+          <div class="alert-card__top">
+            <span class="alert-card__badge badge-formation">Formation</span>
+            <span class="alert-card__time">Hier</span>
+          </div>
+          <h4>Comptabilité & Gestion</h4>
+          <p>Institut ProSkills · Dakar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Nos services ===== -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Nos services</span>
+        <h2>Tout ce qu'il faut pour avancer</h2>
+        <p>Trois façons de faire décoller votre parcours, du premier emploi à la reconversion.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal" style="--card-accent:var(--color-primary)">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>Emploi</h3>
+          <p>Des offres vérifiées, mises à jour chaque jour, dans tous les secteurs et toutes les régions.</p>
+          <a href="offres.html?type=emploi" class="service-link">Voir les offres
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card reveal" style="--card-accent:var(--color-accent-red)">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5Z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+          </div>
+          <h3>Formation</h3>
+          <p>Des programmes courts et certifiants pour apprendre un métier ou monter en compétence.</p>
+          <a href="offres.html?type=formation" class="service-link">Voir les formations
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card reveal" style="--card-accent:var(--color-accent-yellow)">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h3>Stage</h3>
+          <p>Des stages qualifiants auprès d'entreprises partenaires, pour transformer la théorie en expérience.</p>
+          <a href="offres.html?type=stage" class="service-link">Voir les stages
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Offres récentes ===== -->
+  <section class="offres-recentes" id="offres">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Fraîchement publiées</span>
+        <h2>Offres récentes</h2>
+        <p>Un aperçu des dernières opportunités ajoutées sur JobAlerte.</p>
+      </div>
+
+      <div class="offres-grid" id="offres-recentes-grid">
+        <p>Chargement des offres…</p>
+      </div>
+
+      <div class="center-cta">
+        <a href="offres.html" class="btn btn-primary">Voir toutes les offres</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Chiffres clés ===== -->
+  <section aria-label="Chiffres clés">
+    <div class="stats-band reveal">
+      <div><strong>1 200+</strong><span>Offres publiées</span></div>
+      <div><strong>340</strong><span>Entreprises partenaires</span></div>
+      <div><strong>4 500</strong><span>Candidats accompagnés</span></div>
+      <div><strong>92%</strong><span>Taux de satisfaction</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Témoignages ===== -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Témoignages</span>
+        <h2>Ils ont trouvé leur voie avec JobAlerte</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card reveal">
+          <p class="quote">« J'ai reçu une alerte pour un poste correspondant exactement à mon profil, j'ai postulé le jour même et j'ai été recrutée deux semaines plus tard. »</p>
+          <div class="testimonial-author">
+            <span class="testimonial-avatar">AF</span>
+            <div><strong>Aïssatou Fall</strong><span>Chargée de clientèle</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal">
+          <p class="quote">« Le service CV Pro a complètement transformé mon CV. Les recruteurs me contactent enfin pour des entretiens. »</p>
+          <div class="testimonial-author">
+            <span class="testimonial-avatar">MD</span>
+            <div><strong>Moussa Diop</strong><span>Développeur mobile</span></div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal">
+          <p class="quote">« En tant que recruteur, publier une offre sur JobAlerte prend deux minutes et les candidatures arrivent très vite. »</p>
+          <div class="testimonial-author">
+            <span class="testimonial-avatar">RH</span>
+            <div><strong>Ramata Hann</strong><span>Responsable RH, AppFactory</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section>
+    <div class="cta-band reveal">
+      <div>
+        <h2>Prêt à passer à l'étape suivante ?</h2>
+        <p>Créez votre CV professionnel ou publiez une offre en quelques minutes.</p>
+      </div>
+      <div class="hero-actions" style="margin:0;">
+        <a href="cv-pro.html" class="btn btn-accent">Créer mon CV</a>
+        <a href="employeur.html" class="btn btn-ghost-white">Espace employeur</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            <span class="logo__badge"></span>
+          </span>
+          JobAlerte
+        </a>
+        <p>Votre réussite, notre mission. La plateforme qui connecte candidats et recruteurs, simplement.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Navigation">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="offres.html">Offres</a></li>
+          <li><a href="cv-pro.html">CV Pro</a></li>
+          <li><a href="employeur.html">Espace employeur</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Ressources">
+        <h5>Ressources</h5>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="offres.html?type=formation">Formations</a></li>
+          <li><a href="offres.html?type=stage">Stages</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h5>Contact rapide</h5>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <!-- ⚠️ À MODIFIER : numéro de téléphone -->
+            <a href="tel:+221000000000">+221 00 000 00 00</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <!-- ⚠️ À MODIFIER : numéro WhatsApp (format international sans +) -->
+            <a href="https://wa.me/221000000000" target="_blank" rel="noopener">WhatsApp</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="m22 6-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            <!-- ⚠️ À MODIFIER : adresse email -->
+            <a href="mailto:contact@jobalerte.sn">contact@jobalerte.sn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 JobAlerte. Tous droits réservés.</span>
+      <div class="social-row" aria-label="Réseaux sociaux">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02M3.5 8.5h3.9V21H3.5zM10 8.5h3.7v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-3.9v-6c0-1.4 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V21H10z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WhatsApp flottant ===== -->
+<!-- ⚠️ À MODIFIER : numéro WhatsApp (format international sans +) -->
+<a href="https://wa.me/221000000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter JobAlerte sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.8 14.2c-.2.6-1.4 1.2-2 1.3-.5.1-1.1.1-1.8-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.6.7 1.9.8 2 .1.2.1.4 0 .6-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l1-1.1c.2-.3.4-.2.7-.1l1.8.9c.2.1.4.2.5.3.1.2.1.9-.1 1.5"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
